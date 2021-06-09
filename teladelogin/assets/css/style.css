@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a {
+    color: #666;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header a:focus {
+    color: red;
+}
+
+header a:active {
+    color: yellow;
+}
+
+header a:visited {
+    color: #000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 50px auto;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.content-center {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.content-center img {
+    /* 
+    O certo é corrigir o tamanho da imagem em um editor de imagens, pois senão o site fica fazendo o download de uma imagem grande e apenas exibe ela pequena
+    Veja aqui que utilizamos o seletor de classe, demos um espaço e declaramos um descendente. Neste caso, o este código CSS aplica-se somente aos elemntos img que são descentedes dos elementos que pertencem à classe content-center 
+    */
+
+    width: 70%;
+
+}
+
+.content-center .text-center {
+    text-align: center;
+}
+
+.content-center form {
+    margin: 20px;
+}
+
+.content-center input, 
+.content-center button {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+}
+
+.content-center input {
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+} 
+
+.content-center input:focus {
+    border-bottom-color: #d07335;
+} 
+
+.content-center button {
+    background-color: #d07335;
+    color: #fff;
+}
+
+.content-center button:hover {
+    /*
+    Para pseudo-seletores, tem que colocar o dois pontos (:) junto com o elemento que se quer aplicara propriedade. Se colocar um espaço antes do dois pontos (:), vira um descendente
+    */
+    background-color: #b55b28;
+    cursor: pointer;
+
+}
+.content-center button:active {
+    background-color: #c14e0e;
+    cursor: pointer;
+}
+
+footer {
+    font-size: .8em;
+    text-align: center;
+}
